@@ -1,120 +1,118 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Inicio de Sesión Personalizado</title>
+    <title>Sign In</title>
 </head>
 <body>
     <div id="signup-link">
-        <p>Dont't have an account?</p><a href="https://tu-dominio.b2clogin.com/tu-dominio.onmicrosoft.com/B2C_1_signup/v2.0/.well-known/openid-configuration">Sign Up now</a>
-        
+        <p>Don't have an account? <a href="https://tu-dominio.b2clogin.com/tu-dominio.onmicrosoft.com/B2C_1_signup/v2.0/.well-known/openid-configuration">Sign Up now</a></p>
     </div>
-    <!-- Aquí van los campos de input para el inicio de sesión -->
+
+    <!-- Input fields for login -->
     <div id="api">
-        <!-- Formulario de inicio de sesión -->
+        <!-- Login form -->
     </div>
-
-
 
     <style>
-                    /* Estilos Generales */
-            body {
-                font-family: 'Arial', sans-serif;
-                background-color: #f5f5f5;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-                margin: 0;
-            }
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
 
-            /* Contenedor Principal */
-            #api {
-                background-color: #ffffff;
-                border-radius: 10px;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-                width: 350px;
-                padding: 30px;
-                text-align: center;
-                margin: auto; /* Centrar el contenedor */
-            }
+        /* Main Container */
+        #api {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            padding: 30px;
+            text-align: center;
+            margin: auto; /* Center the container */
+        }
 
-            /* Título */
-            #api h2 {
-                font-size: 24px;
-                color: #333333;
-                margin-bottom: 20px;
-            }
+        /* Title */
+        #api h2 {
+            font-size: 24px;
+            color: #333333;
+            margin-bottom: 20px;
+        }
 
-            /* Campos de Entrada (Input Fields) */
-            input[type="email"],
-            input[type="password"] {
-                width: 100%;
-                padding: 10px;
-                margin-bottom: 15px;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                font-size: 16px;
-                box-sizing: border-box; /* Asegura que el padding no aumente el ancho total */
-            }
+        /* Input Fields */
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box; /* Ensure padding doesn't increase total width */
+        }
 
-            input[type="email"]:focus,
-            input[type="password"]:focus {
-                outline: none;
-                border-color: #6200ea; /* Púrpura al enfocar */
-            }
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            outline: none;
+            border-color: #6200ea; /* Purple on focus */
+        }
 
-            /* Botón de Inicio de Sesión */
-            #signIn {
-                width: 100%;
-                padding: 10px;
-                background-color: #6200ea; /* Púrpura */
-                color: #ffffff;
-                border: none;
-                border-radius: 5px;
-                font-size: 16px;
-                cursor: pointer;
-                margin-top: 10px;
-            }
+        /* Sign In Button */
+        #signIn {
+            width: 100%;
+            padding: 10px;
+            background-color: #6200ea; /* Purple */
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
 
-            #signIn:hover {
-                background-color: #4500b5; /* Púrpura más oscuro al pasar el ratón */
-            }
+        #signIn:hover {
+            background-color: #4500b5; /* Darker purple on hover */
+        }
 
-            /* Enlace de Registro ("¿No tienes cuenta?") */
-            #createAccount {
-                margin-top: 20px;
-                font-size: 14px;
-            }
+        /* Create Account Link */
+        #createAccount {
+            margin-top: 20px;
+            font-size: 14px;
+        }
 
-            #createAccount a {
-                color: #6200ea; /* Púrpura para el enlace */
-                text-decoration: none;
-            }
+        #createAccount a {
+            color: #6200ea; /* Purple for the link */
+            text-decoration: none;
+        }
 
-            #createAccount a:hover {
-                text-decoration: underline; /* Subrayar al pasar el ratón */
-            }
+        #createAccount a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
 
-            /* Mensaje de Error */
-            .errorMessage {
-                color: red;
-                margin-bottom: 10px;
-            }
+        /* Error Message */
+        .errorMessage {
+            color: red;
+            margin-bottom: 10px;
+        }
 
-            /* Restablecer Contraseña */
-            #forgotPassword {
-                margin-top: 10px;
-                font-size: 14px;
-            }
+        /* Reset Password */
+        #forgotPassword {
+            margin-top: 10px;
+            font-size: 14px;
+        }
 
-            #forgotPassword a {
-                color: #6200ea; /* Púrpura para el enlace */
-                text-decoration: none;
-            }
+        #forgotPassword a {
+            color: #6200ea; /* Purple for the link */
+            text-decoration: none;
+        }
 
-            #forgotPassword a:hover {
-                text-decoration: underline; /* Subrayar al pasar el ratón */
-            }
+        #forgotPassword a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
 
     </style>
 </body>
