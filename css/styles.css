@@ -1,0 +1,81 @@
+/* ========== ESTILOS GENERALES ========== */
+
+/* Reset básico para mejorar la consistencia entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuente y fondo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Botones reutilizables */
+.button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s ease-in-out;
+}
+
+.button-primary {
+    background: #007bff;
+    color: white;
+}
+
+.button-primary:hover {
+    background: #0056b3;
+}
+
+.button-secondary {
+    background: #ccc;
+    color: #333;
+}
+
+.button-secondary:hover {
+    background: #aaa;
+}
+
+/* Inputs */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Enlaces */
+.link {
+    font-size: 13px;
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
