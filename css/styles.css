@@ -1,13 +1,11 @@
-/* ========== ESTILOS GENERALES ========== */
 
-/* Reset básico para mejorar la consistencia entre navegadores */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Fuente y fondo general */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
@@ -15,7 +13,7 @@ body {
     line-height: 1.6;
 }
 
-/* Contenedor principal */
+
 .container {
     max-width: 400px;
     background: white;
@@ -26,7 +24,7 @@ body {
     text-align: center;
 }
 
-/* Botones reutilizables */
+
 .button {
     display: block;
     width: 100%;
@@ -57,7 +55,7 @@ body {
     background: #aaa;
 }
 
-/* Inputs */
+
 .input-field {
     width: 100%;
     padding: 10px;
@@ -67,7 +65,7 @@ body {
     font-size: 14px;
 }
 
-/* Enlaces */
+
 .link {
     font-size: 13px;
     color: #007bff;
