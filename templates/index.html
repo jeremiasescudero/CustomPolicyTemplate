@@ -3,6 +3,69 @@
 <head>
     <link rel="stylesheet" href="../css/styles.css">
     <title>Sign In</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #e6f7ff; /* Un azul muy claro como fondo */
+            margin: 0;
+        }
+
+        div {
+            width: 400px; /* Ancho fijo para mantener la simetría */
+            padding: 40px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #api {
+            margin-top: 20px;
+        }
+
+        #api input[type="text"],
+        #api input[type="password"] {
+            width: calc(100% - 22px); /* Ajuste para el padding y el borde */
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #a8d5ff; /* Borde azul claro */
+            border-radius: 4px;
+            box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+        }
+
+        #api input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #42a5f5; /* Azul medio para el botón */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #api input[type="submit"]:hover {
+            background-color: #1e88e5; /* Azul más oscuro al pasar el ratón */
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        a {
+            color: #1976d2; /* Un azul para los enlaces */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <!-- Input fields for login -->
