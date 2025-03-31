@@ -6,47 +6,77 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-    
-        h1 {
-
-            color: blue;
-
-            text-align: center;
-
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4; /* Un fondo gris claro para la página */
             }
 
-            .intro h2 {
-
-            text-align: center;
-
+            #localAccountForm {
+            background-color: #fff; /* Fondo blanco para el formulario */
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px; /* Ancho fijo para el formulario */
             }
 
-            .entry {
+            .entry-item {
+            margin-bottom: 1em;
+            }
 
-            width: 400px ;
+            label {
+            display: block;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+            }
 
-            margin-left: auto ;
+            input[type="text"],
+            input[type="password"] {
+            width: calc(100% - 12px); /* Ancho del input ajustado al padding */
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            }
 
-            margin-right: auto ;
+            button {
+            width: 100%;
+            padding: 0.7em;
+            background-color: #0078d4; /* Azul Microsoft para el botón */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            }
 
+            button:hover {
+            background-color: #005a9e; /* Azul más oscuro al pasar el ratón */
+            }
+
+            .divider {
+            text-align: center;
+            margin: 1.5em 0;
+            color: #888;
             }
 
             .divider h2 {
+            font-size: 1em;
+            }
 
+            .create p {
             text-align: center;
-
             }
 
-            .create {
-
-            width: 400px ;
-
-            margin-left: auto ;
-
-            margin-right: auto ;
-
+            .create a {
+            color: #0078d4;
+            text-decoration: none;
             }
+
+            
     </style>
 </head>
 <body>
