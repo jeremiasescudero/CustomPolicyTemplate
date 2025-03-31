@@ -3,67 +3,84 @@
 <head>
     <title>Sign In</title>
     <style>
-        body {
-            font-family: sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #e6f7ff; /* Un azul muy claro como fondo */
-            margin: 0;
-        }
+        /* Center the form container */
+#api {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
 
-        div {
-            width: 400px; /* Ancho fijo para mantener la simetría */
-            padding: 40px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
+/* Style the form */
+#api div {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
 
-        #api {
-            margin-top: 20px;
-        }
+/* Form title */
+#api h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 
-        #api input[type="text"],
-        #api input[type="password"] {
-            width: calc(100% - 22px); /* Ajuste para el padding y el borde */
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #a8d5ff; /* Borde azul claro */
-            border-radius: 4px;
-            box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
-        }
+/* Input fields */
+#api input[type="text"],
+#api input[type="email"],
+#api input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+}
 
-        #api input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            background-color: #42a5f5; /* Azul medio para el botón */
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-weight: bold;
-        }
+/* Button styling */
+#api button,
+#api input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
 
-        #api input[type="submit"]:hover {
-            background-color: #1e88e5; /* Azul más oscuro al pasar el ratón */
-        }
+#api button:hover,
+#api input[type="submit"]:hover {
+    background-color: #2563eb;
+}
 
-        p {
-            margin-bottom: 20px;
-            color: #333;
-        }
+/* Style links */
+#api a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-size: 14px;
+}
 
-        a {
-            color: #1976d2; /* Un azul para los enlaces */
-            text-decoration: none;
-        }
+#api a:hover {
+    text-decoration: underline;
+}
 
-        a:hover {
-            text-decoration: underline;
-        }
+/* Registration message */
+#api p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
     </style>
 </head>
 <body>
