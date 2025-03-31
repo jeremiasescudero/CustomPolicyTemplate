@@ -4,90 +4,86 @@
     <title>Sign In</title>
     <style>
         /* Center the form container */
-        body {
-            font-family: sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #e6f7ff;
-            margin: 0;
-        }
+        <style>
+    body {
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #e6f7ff;
+        margin: 0;
+    }
 
-        .container {
-            width: 400px;
-            padding: 40px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            margin: 50px auto;
-        }
+    .container {
+        width: 350px; /* Ajusta el ancho según sea necesario */
+        padding: 30px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-        .logo {
-            max-width: 150px;
-            margin-bottom: 20px;
-        }
+    .container h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
 
-        h2 {
-            color: #1976d2;
-            margin-bottom: 20px;
-        }
+    .container label {
+        display: block;
+        margin-bottom: 5px;
+    }
 
-        #api {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+    .container input[type="text"],
+    .container input[type="password"] {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
 
-        #localAccountForm {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+    .container input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        background-color: #1976d2;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
 
-        .entry-item {
-            width: calc(100% - 20px);
-            margin-bottom: 15px;
-        }
+    .container input[type="submit"]:hover {
+        background-color: #1565c0;
+    }
 
-        .entry-item label {
-            display: block;
-            margin-bottom: 5px;
-        }
+    .container .remember-forgot {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
 
-        .entry-item input[type="text"] {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #a8d5ff;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
+    .container .remember-forgot a {
+        color: #1976d2;
+        text-decoration: none;
+        font-size: 14px;
+    }
 
-        .buttons input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            background-color: #42a5f5;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-weight: bold;
-        }
+    .container .remember-forgot a:hover {
+        text-decoration: underline;
+    }
 
-        .buttons input[type="submit"]:hover {
-            background-color: #1e88e5;
-        }
+    .container .remember-forgot label {
+        display: inline-flex;
+        align-items: center;
+    }
 
-        #email_success {
-            display: none;
-        }
-
-        #continue {
-            display: none;
-        }
+    .container .remember-forgot input[type="checkbox"] {
+        margin-right: 5px;
+    }
+</style>
 
     </style>
 </head>
