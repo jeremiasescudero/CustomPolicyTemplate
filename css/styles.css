@@ -6,7 +6,7 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: #f4f4f4; /* Light gray background */
+    background: linear-gradient(to bottom, #3b82f6, #271cff); /* Light gray background */
     color: #333; /* Base text color */
     line-height: 1.6; /* Line spacing for readability */
   }
